@@ -1,0 +1,2 @@
+module ExchangeDetailsHelper
+end

@@ -1,0 +1,33 @@
+<h1>Listing exchange_details</h1>
+
+<table>
+  <tr>
+    <th>Stock</th>
+    <th>Sdate</th>
+    <th>Current price</th>
+    <th>Hour</th>
+    <th>Minutes</th>
+    <th>Stime</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @exchange_details.each do |exchange_detail| %>
+  <tr>
+    <td><%= exchange_detail.stock_id %></td>
+    <td><%= exchange_detail.sdate %></td>
+    <td><%= exchange_detail.current_price %></td>
+    <td><%= exchange_detail.hour %></td>
+    <td><%= exchange_detail.minutes %></td>
+    <td><%= exchange_detail.stime %></td>
+    <td><%= link_to 'Show', exchange_detail %></td>
+    <td><%= link_to 'Edit', edit_exchange_detail_path(exchange_detail) %></td>
+    <td><%= link_to 'Destroy', exchange_detail, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Exchange detail', new_exchange_detail_path %>

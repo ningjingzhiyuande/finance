@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Stock:</b>
+  <%= @exchange.stock_id %>
+</p>
+
+<p>
+  <b>Sdate:</b>
+  <%= @exchange.sdate %>
+</p>
+
+<p>
+  <b>Opening:</b>
+  <%= @exchange.opening %>
+</p>
+
+<p>
+  <b>Close:</b>
+  <%= @exchange.close %>
+</p>
+
+<p>
+  <b>Yestoday close:</b>
+  <%= @exchange.yestoday_close %>
+</p>
+
+<p>
+  <b>High:</b>
+  <%= @exchange.high %>
+</p>
+
+<p>
+  <b>Low:</b>
+  <%= @exchange.low %>
+</p>
+
+
+<%= link_to 'Edit', edit_exchange_path(@exchange) %> |
+<%= link_to 'Back', exchanges_path %>

@@ -1,0 +1,35 @@
+<h1>Listing exchanges</h1>
+
+<table>
+  <tr>
+    <th>Stock</th>
+    <th>Sdate</th>
+    <th>Opening</th>
+    <th>Close</th>
+    <th>Yestoday close</th>
+    <th>High</th>
+    <th>Low</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @exchanges.each do |exchange| %>
+  <tr>
+    <td><%= exchange.stock_id %></td>
+    <td><%= exchange.sdate %></td>
+    <td><%= exchange.opening %></td>
+    <td><%= exchange.close %></td>
+    <td><%= exchange.yestoday_close %></td>
+    <td><%= exchange.high %></td>
+    <td><%= exchange.low %></td>
+    <td><%= link_to 'Show', exchange %></td>
+    <td><%= link_to 'Edit', edit_exchange_path(exchange) %></td>
+    <td><%= link_to 'Destroy', exchange, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Exchange', new_exchange_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  stock_id: 1
+  sdate: 2011-07-13
+  opening: 1.5
+  close: 1.5
+  yestoday_close: 1.5
+  high: 1.5
+  low: 1.5
+
+two:
+  stock_id: 1
+  sdate: 2011-07-13
+  opening: 1.5
+  close: 1.5
+  yestoday_close: 1.5
+  high: 1.5
+  low: 1.5

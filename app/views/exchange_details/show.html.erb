@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Stock:</b>
+  <%= @exchange_detail.stock_id %>
+</p>
+
+<p>
+  <b>Sdate:</b>
+  <%= @exchange_detail.sdate %>
+</p>
+
+<p>
+  <b>Current price:</b>
+  <%= @exchange_detail.current_price %>
+</p>
+
+<p>
+  <b>Hour:</b>
+  <%= @exchange_detail.hour %>
+</p>
+
+<p>
+  <b>Minutes:</b>
+  <%= @exchange_detail.minutes %>
+</p>
+
+<p>
+  <b>Stime:</b>
+  <%= @exchange_detail.stime %>
+</p>
+
+
+<%= link_to 'Edit', edit_exchange_detail_path(@exchange_detail) %> |
+<%= link_to 'Back', exchange_details_path %>
