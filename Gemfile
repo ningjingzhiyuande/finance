@@ -7,6 +7,9 @@ gem 'rails', '3.0.7'
 
 gem 'mysql2','~> 0.2.10'
 
+gem "whenever", "~> 0.6.8"
+
+gem "rfetion", "~> 0.5.7"
 # Use unicorn as the web server
 # gem 'unicorn'
 
